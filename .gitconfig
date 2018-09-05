@@ -1,0 +1,22 @@
+[user]
+	name = Filko Jakub
+	email = filkojakub@gmail.com
+[alias]
+	ls = log --pretty=format:"%C(yellow)%h%Cred%d\\ %Creset%s%Cblue\\ [%cn]" --decorate
+	ll = log --pretty=format:"%C(yellow)%h%Cred%d\\ %Creset%s%Cblue\\ [%cn]" --decorate --numstat
+	lnc = log --pretty=format:"%h\\ %s\\ [%cn]"
+	lds = log --pretty=format:"%C(yellow)%h\\ %ad%Cred%d\\ %Creset%s%Cblue\\ [%cn]" --decorate --date=short
+	dlc = diff --cached HEAD^
+	dl = "!git ll -1"
+	dr  = "!f() { git diff "$1"^.."$1"; }; f"
+	lc  = "!f() { git ll "$1"^.."$1"; }; f"
+	diffr  = "!f() { git diff "$1"^.."$1"; }; f"
+	st = "status"
+	add = "a"
+	a = "add"
+	aa = "add ."
+	c = "commit"
+	ph = "push"
+	pl = "pull"
+	plr = "pull --rebase"
+	co = "checkout"

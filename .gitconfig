@@ -20,3 +20,5 @@
 	pl = "pull"
 	plr = "pull --rebase"
 	co = "checkout"
+	df = diff
+	puke = push
